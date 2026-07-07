@@ -1,10 +1,12 @@
 # KPMJ & Associates — Website
 
 A fast, self-contained, world-class marketing site for **KPMJ & Associates**
-(Tax · GST · Financial Consultants, Jaipur — formerly *Bharat Filing Company*).
+(Tax · GST · Financial Consultants, Jaipur — formerly *Bharat Filing Company*),
+led by **CA Jayesh Moolchandani, FCA**.
 
-Deep-navy + gold theme, cinematic hero, scroll animations, fully responsive,
-no build step and no runtime dependencies (pure HTML/CSS/JS).
+Deep-navy + gold theme, cinematic hero, real founder & office photography,
+scroll animations, fully responsive, no build step and no runtime dependencies
+(pure HTML/CSS/JS).
 
 ---
 
@@ -15,62 +17,62 @@ python -m http.server 8353 --directory "D:/Apps/Clients/KPMJ & Associates/Websit
 ```
 then open http://localhost:8353  ·  (a `kpmj-site` preview config is already registered)
 
+Live repo: **https://github.com/aucksy/KPMJ**
+
 ---
+
+## Sections
+
+Hero → trust marquee → 10 services → why-us + stats → process →
+**Meet the founder** → our story → **office gallery** → reviews → Instagram reels →
+CTA → contact + map → footer.  Plus floating WhatsApp button.
 
 ## File map
 
 | File | What it holds |
 |------|---------------|
-| `index.html` | All content & structure (10 services, reviews, about, contact, map, footer) |
-| `styles.css` | Full design system (colours, type, layout, animations, responsive) |
+| `index.html` | All content & structure |
+| `styles.css` | Full design system + all sections + responsive + animations |
 | `script.js`  | Preloader, nav, scroll reveals, counters, hero particle canvas, WhatsApp form |
-| `assets/favicon.svg` | Browser-tab icon (gold "K" monogram) |
-| `assets/og-image.svg` | Social-share card (see note below) |
+| `assets/owner.png` | Founder cutout (CA Jayesh Moolchandani, background removed) |
+| `assets/office/*.jpg` | Real office photos (cabin, door, meeting, team-1, team-2) |
+| `assets/favicon.svg`, `assets/og-image.svg` | Brand icon + social card |
 
 ---
 
-## ✅ Confirmed facts used
+## ✅ Now REAL (added from your material)
 
-- **Name:** KPMJ & Associates · **Phone/WhatsApp:** +91 99505 54949
-- **Address:** Office 8B, Silver Crown, Gandhi Path Rd, Block A, Lalarpura, Jaipur 302034
-- **Rating:** 4.8★ from 25 Google reviews · **Since:** 2021
-- **GSTIN:** 08ABPFA9680E1ZZ (registered Partnership firm)
-- **Real review quote** featured: *"The service was not only professional but also very affordable."*
+- **Founder section** — cutout of **CA Jayesh Moolchandani (FCA)** + full bio
+  (ICAI, B.Com Univ. of Rajasthan, 10+ yrs at Indiabulls / Hem Securities / Indian Bank).
+- **Office gallery** — 5 real photos from your Google listing, cleaned of Maps UI.
+- **About photo** — real meeting-room shot (replaced the placeholder).
+- **Instagram reels** — your 5 real reel links wired into branded cards.
+- **Reviews** — real Google reviews: Rahman Khan & Harshvardhan Rathore (named) plus
+  four genuine review excerpts. The one 1-star complaint is intentionally not featured
+  (the "Read all reviews" button still links to your full Google listing).
+- **Map** — now points to your exact location (maps.app.goo.gl/QCkTmsWjyUQBAE7L8).
+- **Second phone** — +91 91163 55949 added alongside +91 99505 54949.
 
-## ⚠️ Placeholders & things to confirm (search for these in the code)
+## ⚠️ Still to confirm / optional
 
-1. **Office / team photo** — About section. Replace the `.ph--photo` block in
-   `index.html` with `<img src="assets/office.jpg" alt="KPMJ & Associates office">`.
-   Target ratio **4:5**.
-2. **Instagram reels** — `#reels` section has 4 placeholder tiles (9:16). Swap each
-   `<a class="reel ph …>` for a real reel thumbnail/embed linking to the post.
-3. **Instagram handle** — currently `@ms_kpmj_associates`. **Please confirm** it's the
-   correct/official handle (found via search; not verified).
-4. **Business hours** — shown as *Mon–Sat 10:00 AM – 7:00 PM* and marked `(confirm)`.
-   Google only lists "closes 7 pm".
-5. **Email** — placeholder `info@kpmjassociates.in`, marked `(confirm)`. Replace with the real address.
-6. **Positioning** — copy says "Tax · GST · Financial Consultants" (matches the Google
-   "Financial consultant" category). If a **Chartered Accountant (ICAI)** is a partner and
-   you want CA branding, tell me and I'll update headings/tagline accordingly.
-7. **OG image** — `assets/og-image.svg` works, but some social platforms only read PNG/JPG.
-   Export it to `og-image.jpg` (1200×630) for production and update the `og:image` tag.
-8. **Domain** — `canonical`/OG URLs use a placeholder `https://kpmjassociates.in/`.
-   Update once the real domain is chosen.
-
-## 🎨 Higgsfield imagery (optional upgrade)
-
-All visuals are currently bespoke CSS/SVG art (no photos needed). The connected
-Higgsfield account was **out of credits** (0.22 left; ~1 credit per image), so no AI
-images were generated. **Top up credits and I'll generate a cinematic hero + section
-imagery** to drop straight into the labelled slots.
-
----
+1. **Instagram handle** — using `@ms_kpmj_associates` (best guess; the individual reel
+   links are correct). Confirm the profile handle for the "Follow" button.
+2. **Business hours** — shown as *Mon–Sat 10 AM – 7 PM* `(confirm)`. Google only says "closes 7 pm".
+3. **Email** — placeholder `info@kpmjassociates.in` `(confirm)`.
+4. **Domain** — your Google-listed site is **bharat-filing.com**; the page's canonical/OG
+   URLs now point there. If this new site will live at a different address, tell me and I'll update.
+5. **"Chartered Accountants" branding** — the founder is a verified FCA and the office is
+   branded "CA", so the site now says *"led by Chartered Accountant CA Jayesh Moolchandani."*
+   The top tagline still reads "Tax · GST · Financial Consultants" per your earlier choice —
+   say the word to promote it to "Chartered Accountants & Financial Consultants" firm-wide.
+6. **Reel thumbnails** — cards link out to the real reels. If you want live in-page reel
+   previews, I can add official Instagram embeds (loads Instagram's script).
+7. **OG image** — `og-image.svg` works; export a 1200×630 `.jpg` for best social previews.
 
 ## Notes for developers
 
-- The contact form needs **no backend** — it composes a pre-filled WhatsApp message to
-  +91 99505 54949 and opens `wa.me`. (Message is fully URL-encoded so `&`/`*`/newlines are safe.)
-- Fonts load from Google Fonts (Fraunces + Manrope). For a 100% offline/self-hosted build,
-  download the woff2 files into `assets/fonts/` and swap the `<link>` for `@font-face`.
-- Respects `prefers-reduced-motion` (animations + particle canvas disable automatically).
-- The hero particle canvas pauses when the tab is hidden or scrolled out of view (perf).
+- Contact form needs **no backend** — composes a fully URL-encoded WhatsApp message to +91 99505 54949.
+- Fonts: Google Fonts (Fraunces + Manrope). Respects `prefers-reduced-motion`.
+- Founder cutout was produced with `rembg` (u2net_human_seg); office photos optimized with Pillow.
+- Preview screenshots: the live hero canvas + Google-Maps iframe can hang the screenshot
+  tool — pause rAF and remove the iframe before capturing.
